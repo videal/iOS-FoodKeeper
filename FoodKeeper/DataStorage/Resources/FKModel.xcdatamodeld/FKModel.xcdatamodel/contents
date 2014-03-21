@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Product" representedClassName="Product" syncable="YES">
+        <attribute name="expireDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="productDescription" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductDescription" inverseName="product" inverseEntity="ProductDescription" syncable="YES"/>
+        <relationship name="storage" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Storage" inverseName="storedProducts" inverseEntity="Storage" syncable="YES"/>
+    </entity>
+    <entity name="ProductDescription" representedClassName="ProductDescription" syncable="YES">
+        <attribute name="barcode" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="category" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="storageType" optional="YES" attributeType="Integer 32" minValueString="1" maxValueString="2" syncable="YES"/>
+        <relationship name="product" toMany="YES" deletionRule="Deny" destinationEntity="Product" inverseName="productDescription" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Storage" representedClassName="Storage" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="storedProducts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="storage" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Product" positionX="-135" positionY="81" width="128" height="103"/>
+        <element name="ProductDescription" positionX="-362" positionY="81" width="128" height="118"/>
+        <element name="Storage" positionX="-137" positionY="-73" width="128" height="75"/>
+    </elements>
+</model>

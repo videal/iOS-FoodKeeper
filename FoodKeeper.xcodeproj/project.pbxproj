@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EB0FCD43B646C988E5FAB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C021435AE4434099915718EA /* libPods.a */; };
+		3A25939A1885A9EB004DEF8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2593991885A9EB004DEF8E /* Foundation.framework */; };
+		3A25939C1885A9EB004DEF8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A25939B1885A9EB004DEF8E /* CoreGraphics.framework */; };
+		3A25939E1885A9EB004DEF8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A25939D1885A9EB004DEF8E /* UIKit.framework */; };
+		3A2593A41885A9EB004DEF8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A2593A21885A9EB004DEF8E /* InfoPlist.strings */; };
+		3A2593A61885A9EB004DEF8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2593A51885A9EB004DEF8E /* main.m */; };
+		3A2593AA1885A9EB004DEF8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2593A91885A9EB004DEF8E /* AppDelegate.m */; };
+		3A2593AD1885A9EB004DEF8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2593AB1885A9EB004DEF8E /* Main.storyboard */; };
+		3A2593B21885A9EB004DEF8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2593B11885A9EB004DEF8E /* Images.xcassets */; };
+		79678B27188FF055000CFA60 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79678B26188FF055000CFA60 /* SystemConfiguration.framework */; };
+		79678B29188FF05C000CFA60 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79678B28188FF05C000CFA60 /* MobileCoreServices.framework */; };
+		DB2AE361189BD4B4001F5A70 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2AE360189BD4B4001F5A70 /* CoreData.framework */; };
+		DBAF108218DB5E7F00617117 /* food_categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBAF108118DB5E7F00617117 /* food_categories.plist */; };
+		DBAF108918DB6FDE00617117 /* FKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAF108818DB6FDE00617117 /* FKNavigationController.m */; };
+		DBBC6DE018DC4D2000973AD0 /* FKLocalNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBC6DDF18DC4D2000973AD0 /* FKLocalNotificationManager.m */; };
+		DBC00F2318D8991700D4CF62 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EDE18D8991700D4CF62 /* Product.m */; };
+		DBC00F2418D8991700D4CF62 /* ProductDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EE018D8991700D4CF62 /* ProductDescription.m */; };
+		DBC00F2618D8991700D4CF62 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EE418D8991700D4CF62 /* Storage.m */; };
+		DBC00F2718D8991700D4CF62 /* FKModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EE618D8991700D4CF62 /* FKModel.xcdatamodeld */; };
+		DBC00F2818D8991700D4CF62 /* FKDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EEA18D8991700D4CF62 /* FKDataManager.m */; };
+		DBC00F2A18D8991700D4CF62 /* AddFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EF218D8991700D4CF62 /* AddFoodViewController.m */; };
+		DBC00F2B18D8991700D4CF62 /* CategoryItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EF618D8991700D4CF62 /* CategoryItemTableViewCell.m */; };
+		DBC00F2C18D8991700D4CF62 /* CategoryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EF918D8991700D4CF62 /* CategoryPickerViewController.m */; };
+		DBC00F2D18D8991700D4CF62 /* CupboardItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00EFD18D8991700D4CF62 /* CupboardItemTableViewCell.m */; };
+		DBC00F2E18D8991700D4CF62 /* CupboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F0018D8991700D4CF62 /* CupboardViewController.m */; };
+		DBC00F2F18D8991700D4CF62 /* ExpireDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F0418D8991700D4CF62 /* ExpireDatePickerViewController.m */; };
+		DBC00F3018D8991700D4CF62 /* FridgeItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F0818D8991700D4CF62 /* FridgeItemTableViewCell.m */; };
+		DBC00F3118D8991700D4CF62 /* FridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F0B18D8991700D4CF62 /* FridgeViewController.m */; };
+		DBC00F3218D8991700D4CF62 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F0D18D8991700D4CF62 /* MainTabBarViewController.m */; };
+		DBC00F3318D8991700D4CF62 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F1118D8991700D4CF62 /* MenuCell.m */; };
+		DBC00F3418D8991700D4CF62 /* MenuHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F1318D8991700D4CF62 /* MenuHeaderCell.m */; };
+		DBC00F3518D8991700D4CF62 /* MenuTableViewCellRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F1618D8991700D4CF62 /* MenuTableViewCellRowModel.m */; };
+		DBC00F3618D8991700D4CF62 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F1918D8991700D4CF62 /* MenuViewController.m */; };
+		DBC00F3718D8991700D4CF62 /* ShoppingBasketItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F1D18D8991700D4CF62 /* ShoppingBasketItemTableViewCell.m */; };
+		DBC00F3818D8991700D4CF62 /* ShoppingBascketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F2018D8991700D4CF62 /* ShoppingBascketViewController.m */; };
+		DBC00F3918D8991700D4CF62 /* SidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F2218D8991700D4CF62 /* SidePanelController.m */; };
+		DBC00F3C18D8993F00D4CF62 /* UIViewController+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC00F3B18D8993F00D4CF62 /* UIViewController+Custom.m */; };
+		DBC0E76918D9D070002205B5 /* NSDate+CupertinoYankee.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC0E76818D9D070002205B5 /* NSDate+CupertinoYankee.m */; };
+		DBC0E77918D9EB16002205B5 /* SearchAutoCompleteItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC0E77518D9EB16002205B5 /* SearchAutoCompleteItemTableViewCell.m */; };
+		DBC0E77A18D9EB16002205B5 /* SearchAutoCompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC0E77818D9EB16002205B5 /* SearchAutoCompleteViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A2593961885A9EB004DEF8E /* FoodKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2593991885A9EB004DEF8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A25939B1885A9EB004DEF8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A25939D1885A9EB004DEF8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A2593A11885A9EB004DEF8E /* FoodKeeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoodKeeper-Info.plist"; sourceTree = "<group>"; };
+		3A2593A31885A9EB004DEF8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A2593A51885A9EB004DEF8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A2593A71885A9EB004DEF8E /* FoodKeeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodKeeper-Prefix.pch"; sourceTree = "<group>"; };
+		3A2593A81885A9EB004DEF8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A2593A91885A9EB004DEF8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A2593AC1885A9EB004DEF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A2593B11885A9EB004DEF8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A2593B81885A9EB004DEF8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		79678B26188FF055000CFA60 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		79678B28188FF05C000CFA60 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C021435AE4434099915718EA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5504D47EEA940FBB719E076 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DB1837A718DB17200051AC68 /* ProductItemTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductItemTableViewCellDelegate.h; sourceTree = "<group>"; };
+		DB2AE360189BD4B4001F5A70 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DBAF108118DB5E7F00617117 /* food_categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = food_categories.plist; sourceTree = "<group>"; };
+		DBAF108718DB6FDE00617117 /* FKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKNavigationController.h; sourceTree = "<group>"; };
+		DBAF108818DB6FDE00617117 /* FKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKNavigationController.m; sourceTree = "<group>"; };
+		DBBC6DDE18DC4D2000973AD0 /* FKLocalNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLocalNotificationManager.h; sourceTree = "<group>"; };
+		DBBC6DDF18DC4D2000973AD0 /* FKLocalNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKLocalNotificationManager.m; sourceTree = "<group>"; };
+		DBC00EDD18D8991700D4CF62 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		DBC00EDE18D8991700D4CF62 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		DBC00EDF18D8991700D4CF62 /* ProductDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDescription.h; sourceTree = "<group>"; };
+		DBC00EE018D8991700D4CF62 /* ProductDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDescription.m; sourceTree = "<group>"; };
+		DBC00EE318D8991700D4CF62 /* Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
+		DBC00EE418D8991700D4CF62 /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
+		DBC00EE718D8991700D4CF62 /* FKModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FKModel.xcdatamodel; sourceTree = "<group>"; };
+		DBC00EE918D8991700D4CF62 /* FKDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKDataManager.h; sourceTree = "<group>"; };
+		DBC00EEA18D8991700D4CF62 /* FKDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKDataManager.m; sourceTree = "<group>"; };
+		DBC00EF118D8991700D4CF62 /* AddFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFoodViewController.h; sourceTree = "<group>"; };
+		DBC00EF218D8991700D4CF62 /* AddFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFoodViewController.m; sourceTree = "<group>"; };
+		DBC00EF518D8991700D4CF62 /* CategoryItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryItemTableViewCell.h; sourceTree = "<group>"; };
+		DBC00EF618D8991700D4CF62 /* CategoryItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryItemTableViewCell.m; sourceTree = "<group>"; };
+		DBC00EF818D8991700D4CF62 /* CategoryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryPickerViewController.h; sourceTree = "<group>"; };
+		DBC00EF918D8991700D4CF62 /* CategoryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPickerViewController.m; sourceTree = "<group>"; };
+		DBC00EFC18D8991700D4CF62 /* CupboardItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CupboardItemTableViewCell.h; sourceTree = "<group>"; };
+		DBC00EFD18D8991700D4CF62 /* CupboardItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CupboardItemTableViewCell.m; sourceTree = "<group>"; };
+		DBC00EFF18D8991700D4CF62 /* CupboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CupboardViewController.h; sourceTree = "<group>"; };
+		DBC00F0018D8991700D4CF62 /* CupboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CupboardViewController.m; sourceTree = "<group>"; };
+		DBC00F0318D8991700D4CF62 /* ExpireDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpireDatePickerViewController.h; sourceTree = "<group>"; };
+		DBC00F0418D8991700D4CF62 /* ExpireDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpireDatePickerViewController.m; sourceTree = "<group>"; };
+		DBC00F0718D8991700D4CF62 /* FridgeItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FridgeItemTableViewCell.h; sourceTree = "<group>"; };
+		DBC00F0818D8991700D4CF62 /* FridgeItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridgeItemTableViewCell.m; sourceTree = "<group>"; };
+		DBC00F0A18D8991700D4CF62 /* FridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FridgeViewController.h; sourceTree = "<group>"; };
+		DBC00F0B18D8991700D4CF62 /* FridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridgeViewController.m; sourceTree = "<group>"; };
+		DBC00F0C18D8991700D4CF62 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		DBC00F0D18D8991700D4CF62 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		DBC00F1018D8991700D4CF62 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		DBC00F1118D8991700D4CF62 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		DBC00F1218D8991700D4CF62 /* MenuHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHeaderCell.h; sourceTree = "<group>"; };
+		DBC00F1318D8991700D4CF62 /* MenuHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuHeaderCell.m; sourceTree = "<group>"; };
+		DBC00F1518D8991700D4CF62 /* MenuTableViewCellRowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCellRowModel.h; sourceTree = "<group>"; };
+		DBC00F1618D8991700D4CF62 /* MenuTableViewCellRowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCellRowModel.m; sourceTree = "<group>"; };
+		DBC00F1818D8991700D4CF62 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		DBC00F1918D8991700D4CF62 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		DBC00F1C18D8991700D4CF62 /* ShoppingBasketItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingBasketItemTableViewCell.h; sourceTree = "<group>"; };
+		DBC00F1D18D8991700D4CF62 /* ShoppingBasketItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingBasketItemTableViewCell.m; sourceTree = "<group>"; };
+		DBC00F1F18D8991700D4CF62 /* ShoppingBascketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingBascketViewController.h; sourceTree = "<group>"; };
+		DBC00F2018D8991700D4CF62 /* ShoppingBascketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingBascketViewController.m; sourceTree = "<group>"; };
+		DBC00F2118D8991700D4CF62 /* SidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidePanelController.h; sourceTree = "<group>"; };
+		DBC00F2218D8991700D4CF62 /* SidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidePanelController.m; sourceTree = "<group>"; };
+		DBC00F3A18D8993F00D4CF62 /* UIViewController+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Custom.h"; sourceTree = "<group>"; };
+		DBC00F3B18D8993F00D4CF62 /* UIViewController+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Custom.m"; sourceTree = "<group>"; };
+		DBC0E76718D9D070002205B5 /* NSDate+CupertinoYankee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CupertinoYankee.h"; sourceTree = "<group>"; };
+		DBC0E76818D9D070002205B5 /* NSDate+CupertinoYankee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CupertinoYankee.m"; sourceTree = "<group>"; };
+		DBC0E77418D9EB16002205B5 /* SearchAutoCompleteItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchAutoCompleteItemTableViewCell.h; sourceTree = "<group>"; };
+		DBC0E77518D9EB16002205B5 /* SearchAutoCompleteItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchAutoCompleteItemTableViewCell.m; sourceTree = "<group>"; };
+		DBC0E77718D9EB16002205B5 /* SearchAutoCompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchAutoCompleteViewController.h; sourceTree = "<group>"; };
+		DBC0E77818D9EB16002205B5 /* SearchAutoCompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchAutoCompleteViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A2593931885A9EB004DEF8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2AE361189BD4B4001F5A70 /* CoreData.framework in Frameworks */,
+				79678B29188FF05C000CFA60 /* MobileCoreServices.framework in Frameworks */,
+				79678B27188FF055000CFA60 /* SystemConfiguration.framework in Frameworks */,
+				3A25939C1885A9EB004DEF8E /* CoreGraphics.framework in Frameworks */,
+				3A25939E1885A9EB004DEF8E /* UIKit.framework in Frameworks */,
+				3A25939A1885A9EB004DEF8E /* Foundation.framework in Frameworks */,
+				01EB0FCD43B646C988E5FAB2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A25938D1885A9EB004DEF8E = {
+			isa = PBXGroup;
+			children = (
+				3A25939F1885A9EB004DEF8E /* FoodKeeper */,
+				3A2593981885A9EB004DEF8E /* Frameworks */,
+				3A2593971885A9EB004DEF8E /* Products */,
+				D5504D47EEA940FBB719E076 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		3A2593971885A9EB004DEF8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A2593961885A9EB004DEF8E /* FoodKeeper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A2593981885A9EB004DEF8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB2AE360189BD4B4001F5A70 /* CoreData.framework */,
+				79678B28188FF05C000CFA60 /* MobileCoreServices.framework */,
+				79678B26188FF055000CFA60 /* SystemConfiguration.framework */,
+				3A2593991885A9EB004DEF8E /* Foundation.framework */,
+				3A25939B1885A9EB004DEF8E /* CoreGraphics.framework */,
+				3A25939D1885A9EB004DEF8E /* UIKit.framework */,
+				3A2593B81885A9EB004DEF8E /* XCTest.framework */,
+				C021435AE4434099915718EA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A25939F1885A9EB004DEF8E /* FoodKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC6DDD18DC4D2000973AD0 /* LocalNotificationManager */,
+				DBAF108018DB5E7F00617117 /* Resources */,
+				DBC00EDB18D8991700D4CF62 /* DataStorage */,
+				DBC00EEB18D8991700D4CF62 /* Utils */,
+				DBC00EEE18D8991700D4CF62 /* ViewControllers */,
+				3A2593A81885A9EB004DEF8E /* AppDelegate.h */,
+				3A2593A91885A9EB004DEF8E /* AppDelegate.m */,
+				3A2593AB1885A9EB004DEF8E /* Main.storyboard */,
+				3A2593B11885A9EB004DEF8E /* Images.xcassets */,
+				3A2593A01885A9EB004DEF8E /* Supporting Files */,
+			);
+			path = FoodKeeper;
+			sourceTree = "<group>";
+		};
+		3A2593A01885A9EB004DEF8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A2593A11885A9EB004DEF8E /* FoodKeeper-Info.plist */,
+				3A2593A21885A9EB004DEF8E /* InfoPlist.strings */,
+				3A2593A51885A9EB004DEF8E /* main.m */,
+				3A2593A71885A9EB004DEF8E /* FoodKeeper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBAF108018DB5E7F00617117 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBAF108118DB5E7F00617117 /* food_categories.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DBBC6DDD18DC4D2000973AD0 /* LocalNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC6DDE18DC4D2000973AD0 /* FKLocalNotificationManager.h */,
+				DBBC6DDF18DC4D2000973AD0 /* FKLocalNotificationManager.m */,
+			);
+			path = LocalNotificationManager;
+			sourceTree = "<group>";
+		};
+		DBC00EDB18D8991700D4CF62 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EDC18D8991700D4CF62 /* Model */,
+				DBC00EE518D8991700D4CF62 /* Resources */,
+				DBC00EE818D8991700D4CF62 /* StorageManager */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		DBC00EDC18D8991700D4CF62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EDD18D8991700D4CF62 /* Product.h */,
+				DBC00EDE18D8991700D4CF62 /* Product.m */,
+				DBC00EDF18D8991700D4CF62 /* ProductDescription.h */,
+				DBC00EE018D8991700D4CF62 /* ProductDescription.m */,
+				DBC00EE318D8991700D4CF62 /* Storage.h */,
+				DBC00EE418D8991700D4CF62 /* Storage.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBC00EE518D8991700D4CF62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EE618D8991700D4CF62 /* FKModel.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DBC00EE818D8991700D4CF62 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EE918D8991700D4CF62 /* FKDataManager.h */,
+				DBC00EEA18D8991700D4CF62 /* FKDataManager.m */,
+			);
+			path = StorageManager;
+			sourceTree = "<group>";
+		};
+		DBC00EEB18D8991700D4CF62 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0E76718D9D070002205B5 /* NSDate+CupertinoYankee.h */,
+				DBC0E76818D9D070002205B5 /* NSDate+CupertinoYankee.m */,
+				DBC00F3A18D8993F00D4CF62 /* UIViewController+Custom.h */,
+				DBC00F3B18D8993F00D4CF62 /* UIViewController+Custom.m */,
+				DBAF108718DB6FDE00617117 /* FKNavigationController.h */,
+				DBAF108818DB6FDE00617117 /* FKNavigationController.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DBC00EEE18D8991700D4CF62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0E77218D9EB16002205B5 /* SearchAutoCompleteViewController */,
+				DBC00EEF18D8991700D4CF62 /* AddFoodViewController */,
+				DBC00EF318D8991700D4CF62 /* CategoryPickerViewController */,
+				DBC00EFA18D8991700D4CF62 /* CupboardViewController */,
+				DBC00F0118D8991700D4CF62 /* ExpireDatePickerViewController */,
+				DBC00F0518D8991700D4CF62 /* FridgeViewController */,
+				DBC00F0C18D8991700D4CF62 /* MainTabBarViewController.h */,
+				DBC00F0D18D8991700D4CF62 /* MainTabBarViewController.m */,
+				DBC00F0E18D8991700D4CF62 /* Menu */,
+				DBC00F1A18D8991700D4CF62 /* ShoppingBascketViewController */,
+				DBC00F2118D8991700D4CF62 /* SidePanelController.h */,
+				DBC00F2218D8991700D4CF62 /* SidePanelController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBC00EEF18D8991700D4CF62 /* AddFoodViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EF018D8991700D4CF62 /* ViewController */,
+			);
+			path = AddFoodViewController;
+			sourceTree = "<group>";
+		};
+		DBC00EF018D8991700D4CF62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EF118D8991700D4CF62 /* AddFoodViewController.h */,
+				DBC00EF218D8991700D4CF62 /* AddFoodViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DBC00EF318D8991700D4CF62 /* CategoryPickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EF418D8991700D4CF62 /* Cells */,
+				DBC00EF718D8991700D4CF62 /* ViewController */,
+			);
+			path = CategoryPickerViewController;
+			sourceTree = "<group>";
+		};
+		DBC00EF418D8991700D4CF62 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EF518D8991700D4CF62 /* CategoryItemTableViewCell.h */,
+				DBC00EF618D8991700D4CF62 /* CategoryItemTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DBC00EF718D8991700D4CF62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EF818D8991700D4CF62 /* CategoryPickerViewController.h */,
+				DBC00EF918D8991700D4CF62 /* CategoryPickerViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DBC00EFA18D8991700D4CF62 /* CupboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EFB18D8991700D4CF62 /* Cells */,
+				DBC00EFE18D8991700D4CF62 /* ViewController */,
+			);
+			path = CupboardViewController;
+			sourceTree = "<group>";
+		};
+		DBC00EFB18D8991700D4CF62 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EFC18D8991700D4CF62 /* CupboardItemTableViewCell.h */,
+				DBC00EFD18D8991700D4CF62 /* CupboardItemTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DBC00EFE18D8991700D4CF62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00EFF18D8991700D4CF62 /* CupboardViewController.h */,
+				DBC00F0018D8991700D4CF62 /* CupboardViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DBC00F0118D8991700D4CF62 /* ExpireDatePickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F0218D8991700D4CF62 /* ViewController */,
+			);
+			path = ExpireDatePickerViewController;
+			sourceTree = "<group>";
+		};
+		DBC00F0218D8991700D4CF62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F0318D8991700D4CF62 /* ExpireDatePickerViewController.h */,
+				DBC00F0418D8991700D4CF62 /* ExpireDatePickerViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DBC00F0518D8991700D4CF62 /* FridgeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F0618D8991700D4CF62 /* Cells */,
+				DBC00F0918D8991700D4CF62 /* ViewController */,
+			);
+			path = FridgeViewController;
+			sourceTree = "<group>";
+		};
+		DBC00F0618D8991700D4CF62 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F0718D8991700D4CF62 /* FridgeItemTableViewCell.h */,
+				DBC00F0818D8991700D4CF62 /* FridgeItemTableViewCell.m */,
+				DB1837A718DB17200051AC68 /* ProductItemTableViewCellDelegate.h */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DBC00F0918D8991700D4CF62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F0A18D8991700D4CF62 /* FridgeViewController.h */,
+				DBC00F0B18D8991700D4CF62 /* FridgeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DBC00F0E18D8991700D4CF62 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F0F18D8991700D4CF62 /* Cells */,
+				DBC00F1418D8991700D4CF62 /* Models */,
+				DBC00F1718D8991700D4CF62 /* ViewController */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		DBC00F0F18D8991700D4CF62 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F1018D8991700D4CF62 /* MenuCell.h */,
+				DBC00F1118D8991700D4CF62 /* MenuCell.m */,
+				DBC00F1218D8991700D4CF62 /* MenuHeaderCell.h */,
+				DBC00F1318D8991700D4CF62 /* MenuHeaderCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DBC00F1418D8991700D4CF62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F1518D8991700D4CF62 /* MenuTableViewCellRowModel.h */,
+				DBC00F1618D8991700D4CF62 /* MenuTableViewCellRowModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBC00F1718D8991700D4CF62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F1818D8991700D4CF62 /* MenuViewController.h */,
+				DBC00F1918D8991700D4CF62 /* MenuViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DBC00F1A18D8991700D4CF62 /* ShoppingBascketViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F1B18D8991700D4CF62 /* Cells */,
+				DBC00F1E18D8991700D4CF62 /* ViewController */,
+			);
+			path = ShoppingBascketViewController;
+			sourceTree = "<group>";
+		};
+		DBC00F1B18D8991700D4CF62 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F1C18D8991700D4CF62 /* ShoppingBasketItemTableViewCell.h */,
+				DBC00F1D18D8991700D4CF62 /* ShoppingBasketItemTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DBC00F1E18D8991700D4CF62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC00F1F18D8991700D4CF62 /* ShoppingBascketViewController.h */,
+				DBC00F2018D8991700D4CF62 /* ShoppingBascketViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DBC0E77218D9EB16002205B5 /* SearchAutoCompleteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0E77318D9EB16002205B5 /* Cells */,
+				DBC0E77618D9EB16002205B5 /* ViewController */,
+			);
+			path = SearchAutoCompleteViewController;
+			sourceTree = "<group>";
+		};
+		DBC0E77318D9EB16002205B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0E77418D9EB16002205B5 /* SearchAutoCompleteItemTableViewCell.h */,
+				DBC0E77518D9EB16002205B5 /* SearchAutoCompleteItemTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DBC0E77618D9EB16002205B5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0E77718D9EB16002205B5 /* SearchAutoCompleteViewController.h */,
+				DBC0E77818D9EB16002205B5 /* SearchAutoCompleteViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A2593951885A9EB004DEF8E /* FoodKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2593C81885A9EB004DEF8E /* Build configuration list for PBXNativeTarget "FoodKeeper" */;
+			buildPhases = (
+				4614153D57C14144B1AC58BA /* Check Pods Manifest.lock */,
+				3A2593921885A9EB004DEF8E /* Sources */,
+				3A2593931885A9EB004DEF8E /* Frameworks */,
+				3A2593941885A9EB004DEF8E /* Resources */,
+				58B3F15F64424BC4BBFC35D7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodKeeper;
+			productName = FoodKeeper;
+			productReference = 3A2593961885A9EB004DEF8E /* FoodKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A25938E1885A9EB004DEF8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Videal;
+				TargetAttributes = {
+					3A2593951885A9EB004DEF8E = {
+						DevelopmentTeam = 4VBZ9X65S2;
+					};
+				};
+			};
+			buildConfigurationList = 3A2593911885A9EB004DEF8E /* Build configuration list for PBXProject "FoodKeeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A25938D1885A9EB004DEF8E;
+			productRefGroup = 3A2593971885A9EB004DEF8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A2593951885A9EB004DEF8E /* FoodKeeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A2593941885A9EB004DEF8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAF108218DB5E7F00617117 /* food_categories.plist in Resources */,
+				3A2593B21885A9EB004DEF8E /* Images.xcassets in Resources */,
+				3A2593A41885A9EB004DEF8E /* InfoPlist.strings in Resources */,
+				3A2593AD1885A9EB004DEF8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4614153D57C14144B1AC58BA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58B3F15F64424BC4BBFC35D7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A2593921885A9EB004DEF8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC00F3718D8991700D4CF62 /* ShoppingBasketItemTableViewCell.m in Sources */,
+				DBC00F2318D8991700D4CF62 /* Product.m in Sources */,
+				DBC00F2D18D8991700D4CF62 /* CupboardItemTableViewCell.m in Sources */,
+				DBC00F2B18D8991700D4CF62 /* CategoryItemTableViewCell.m in Sources */,
+				DBC00F3918D8991700D4CF62 /* SidePanelController.m in Sources */,
+				3A2593AA1885A9EB004DEF8E /* AppDelegate.m in Sources */,
+				DBC00F3018D8991700D4CF62 /* FridgeItemTableViewCell.m in Sources */,
+				DBC0E76918D9D070002205B5 /* NSDate+CupertinoYankee.m in Sources */,
+				DBAF108918DB6FDE00617117 /* FKNavigationController.m in Sources */,
+				DBC00F3C18D8993F00D4CF62 /* UIViewController+Custom.m in Sources */,
+				DBC0E77918D9EB16002205B5 /* SearchAutoCompleteItemTableViewCell.m in Sources */,
+				DBC00F2F18D8991700D4CF62 /* ExpireDatePickerViewController.m in Sources */,
+				DBC00F3218D8991700D4CF62 /* MainTabBarViewController.m in Sources */,
+				DBC00F3418D8991700D4CF62 /* MenuHeaderCell.m in Sources */,
+				DBC00F2818D8991700D4CF62 /* FKDataManager.m in Sources */,
+				3A2593A61885A9EB004DEF8E /* main.m in Sources */,
+				DBC00F2418D8991700D4CF62 /* ProductDescription.m in Sources */,
+				DBC00F3818D8991700D4CF62 /* ShoppingBascketViewController.m in Sources */,
+				DBC00F2718D8991700D4CF62 /* FKModel.xcdatamodeld in Sources */,
+				DBC00F3518D8991700D4CF62 /* MenuTableViewCellRowModel.m in Sources */,
+				DBC0E77A18D9EB16002205B5 /* SearchAutoCompleteViewController.m in Sources */,
+				DBC00F3318D8991700D4CF62 /* MenuCell.m in Sources */,
+				DBC00F2A18D8991700D4CF62 /* AddFoodViewController.m in Sources */,
+				DBC00F2E18D8991700D4CF62 /* CupboardViewController.m in Sources */,
+				DBC00F2C18D8991700D4CF62 /* CategoryPickerViewController.m in Sources */,
+				DBC00F2618D8991700D4CF62 /* Storage.m in Sources */,
+				DBC00F3118D8991700D4CF62 /* FridgeViewController.m in Sources */,
+				DBBC6DE018DC4D2000973AD0 /* FKLocalNotificationManager.m in Sources */,
+				DBC00F3618D8991700D4CF62 /* MenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A2593A21885A9EB004DEF8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A2593A31885A9EB004DEF8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3A2593AB1885A9EB004DEF8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A2593AC1885A9EB004DEF8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A2593C61885A9EB004DEF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A2593C71885A9EB004DEF8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A2593C91885A9EB004DEF8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5504D47EEA940FBB719E076 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoodKeeper/FoodKeeper-Prefix.pch";
+				INFOPLIST_FILE = "FoodKeeper/FoodKeeper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A2593CA1885A9EB004DEF8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5504D47EEA940FBB719E076 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoodKeeper/FoodKeeper-Prefix.pch";
+				INFOPLIST_FILE = "FoodKeeper/FoodKeeper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A2593911885A9EB004DEF8E /* Build configuration list for PBXProject "FoodKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2593C61885A9EB004DEF8E /* Debug */,
+				3A2593C71885A9EB004DEF8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A2593C81885A9EB004DEF8E /* Build configuration list for PBXNativeTarget "FoodKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2593C91885A9EB004DEF8E /* Debug */,
+				3A2593CA1885A9EB004DEF8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DBC00EE618D8991700D4CF62 /* FKModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DBC00EE718D8991700D4CF62 /* FKModel.xcdatamodel */,
+			);
+			currentVersion = DBC00EE718D8991700D4CF62 /* FKModel.xcdatamodel */;
+			path = FKModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A25938E1885A9EB004DEF8E /* Project object */;
+}
